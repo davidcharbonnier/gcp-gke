@@ -1,26 +1,26 @@
 clusters = {
-  infra = {
+  infra-hosting = {
     cluster_autoscaling = null
     description = "Infra hosting"
     dns_domain  = null
     labels      = null
     location    = "northamerica-northeast1-b"
     net = {
-      master_range = "172.17.16.0/28"
+      master_range = "172.16.33.0/28"
       pods         = "pods"
       services     = "services"
-      subnet       = "projects/dch-dev-net-spoke-0/regions/northamerica-northeast1/subnetworks/dev-gke-nodes-nane1"
+      subnet       = "projects/dch-dev-net-spoke-0/regions/northamerica-northeast1/subnetworks/dev-gke-infra-hosting-nane1"
     }
     overrides = null
   }
 }
 
 nodepools = {
-  infra = {
+  infra-hosting = {
     nodepool = {
       initial_node_count = null
       node_count         = 3
-      node_type          = "e2-small"
+      node_type          = "e2-medium"
       overrides          = null
       spot               = true
     }
