@@ -26,3 +26,9 @@ nodepools = {
     }
   }
 }
+
+iam = {
+  "roles/container.developer" = [
+    "serviceAccount:terraform@dch-dev-infra-hosting-0.iam.gserviceaccount.com"
+  ]
+}
