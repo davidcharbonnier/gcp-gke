@@ -29,6 +29,6 @@ nodepools = {
 
 iam = {
   "roles/container.developer" = [
-    "serviceAccount:terraform@dch-dev-infra-hosting-0.iam.gserviceaccount.com"
+    "serviceAccount:dch-prod-teams-infra-0@dch-prod-iac-core-0.iam.gserviceaccount.com"
   ]
 }
